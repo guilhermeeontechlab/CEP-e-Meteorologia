@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js" defer></script>
+
+    <title>Projeto | ViaCEP + Meteorologia</title>
+</head>
+<body>
+    <div class="cabecario">
+        <h1>Projeto Buscar CEP + API OpenWeatherMap</h1>
+        <br>
+        <hr>
+        <br>
+        <p>João Guilherme Oliveira Santos</p>
+    </div>
+    <div class="form">
+        <form id="form-cep">
+            <label for="cep">Digite o CEP:</label> <br>
+            <input type="text" id="cep" name="cep" required pattern="\d{5}-?\d{3}" placeholder="Ex: 12345-678"> <br>
+            <button type="submit" id="buscar">Buscar</button>
+        </form>
+    </div>
+    <div id="resultado" hidden>
+        <h2>Resultado:</h2>
+        <div id="endereco">
+            <h3>Endereço:</h3>
+            <p id="rescep"></p>
+            <p id="logradouro"></p>
+            <p id="bairro"></p>
+            <p id="localidade"></p>
+            <p id="uf"></p>
+        </div>
+
+        <div id="clima">
+            <h3>Clima:</h3>
+            <p id="temperatura"></p>
+            <p id="descricao"></p>
+            <p id="umidade"></p>
+        </div>
+    </div>
+</body>
+
+</html>
